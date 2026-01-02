@@ -1,0 +1,321 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  text-align: center;
+  background: #d3d60f;
+}
+
+.header-image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.shop-name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  background: rgba(244, 4, 4, 0.6);
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+
+/* RATE CARD */
+.rate-card {
+  background: white;
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.rate-card:hover {
+  transform: translateY(-5px);
+}
+
+.rate-card h2 {
+  margin-bottom: 10px;
+  color: #e63946;
+}
+
+.rate-card .date {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.rate-card p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* WHATSAPP BUTTON */
+.order-btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 40px;
+  padding: 12px 22px;
+  background: #25d366;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+  background: #1ebe5d;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 15px;
+  color: #e63946;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-grid img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* ADMIN PANEL */
+.rate-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.rate-card button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rate-card button:hover {
+  background: #d62828;
+}
+
+/* CONTACT SECTION */
+.contact {
+  background: white;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact h2 {
+  color: #e63946;
+}
+
+.contact p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  .rate-card p {
+    font-size: 17px;
+  }
+
+  .gallery-grid img {
+    width: 90%;
+    height: auto;
+  }
+}
+.rate-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #1ebe5d;
+}
+.hero {
+  background: linear-gradient(135deg, #e63946, #ff6b6b);
+  color: white;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero p {
+  margin-top: 8px;
+  font-size: 17px;
+  opacity: 0.95;
+}
+section {
+  margin-bottom: 40px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rate {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+section {
+  margin-bottom: 40px;
+}
+
+.gallery-grid img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+section {
+  margin-bottom: 40px;
+}
+@media (max-width: 480px) {
+  .rate-card {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+}
+section {
+  margin-bottom: 40px;
+}
+.review-form {
+  max-width: 400px;
+  margin: 10px auto 20px;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.review-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.review-form button {
+  width: 100%;
+  padding: 10px;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background: #d62828;
+}
+section {
+  margin-bottom: 40px;
+}
+.loader {
+  text-align: center;
+  font-size: 18px;
+  margin: 30px;
+  color: #555;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+section {
+  margin-bottom: 40px;
+}
+body {
+  font-size: 18px;
+}
+
+button, a {
+  font-size: 18px;
+}
+
+.rate-card p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
