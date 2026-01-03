@@ -1,15 +1,18 @@
-import banner from "../assets/images/header-banner.jpg";
-
 function Header() {
   return (
     <header className="header">
       <img
-        src={banner}
+        src="/favicon.jpg"
         alt="Kapra Chicken Market"
         className="header-image"
       />
-      <h1 className="shop-name">Kapra Chicken Market</h1>
-       <p>Fresh • Hygienic • Daily Best Rates</p>
+
+      <div className="header-content">
+        <h1 className="shop-name">Kapra Chicken Market</h1>
+        <p className="tagline">
+          We undertake all party orders in wholesale
+        </p>
+      </div>
     </header>
   );
 }
